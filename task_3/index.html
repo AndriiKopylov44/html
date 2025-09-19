@@ -10,66 +10,86 @@
             text-align: center;
             background-color: #FFF0F5;
         }
+
         table {
             margin: auto;
             border-style: solid;
             border-width: 1px;
             border-color: black;
         }
+
         td {
+            width: 300px;
             border-style: solid;
             border-width: 1px;
             border-color: black;
+            vertical-align: top;
         }
+
         .date {
             text-align: left;
             font-weight: bold;
-        }
-        h1, h5{
-            color: #C71585;
+            margin-top: 0px;
         }
 
-    h2 {
-        color: #9932CC;
-    }
-    h4 {
-        color: #6495ED;
-    }
+        h1,
+        h5 {
+            color: #C71585;
+
+        }
+
+        h2 {
+            color: #9932CC;
+
+        }
+
+        h4 {
+            color: #6495ED;
+            text-decoration: underline;
+        }
+
+        .shadow {
+            text-shadow: 0px 0px 10px #6495ED;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
     </style>
 </head>
+
 <body>
     <h1>Christmas Advent Calendar</h1>
     <table>
         <tr>
             <td>
-                <p class="date">12/19/2025</p>
-                <h3 style="color:green; text-align:left;"><b>Decorate the house:</b></h3>
-                <br>
+                <h5 class="date">12/19/2025</h5>
+                <h4>Decorate the house:</h4>
                 <img src="https://i.pinimg.com/originals/6e/7b/ca/6e7bca370a709bfc60a1c8f2d550c4a3.gif"
-                    alt="Decorated house" width="350px">
+                    alt="Decorated house" width="300px">
             </td>
             <td>
-                <p class="date">12/20/2025</p>
-                <h3><b><i>Sing Christmas Songs:</i></b></h3>
-                <div style="text-align: left;">
-                <a href="Lets pretend I've inserted those u2b links :)">Jingle Bells</a>
-                <br>
-                <a href="#">We wish you a Merry Christmas</a>
-                <br>
-                <a href="#">Silent Night</a>
-                <br>
-                <a href="#">Let it snow</a>
-                <br>
-                <a href="#">Last Christmas</a>
-                <br>
-                <a href="#">Deck the Halls</a>
+                <h5 class="date">12/20/2025</h5>
+                <h4>Sing Christmas Songs:</h4>
+                <div style="text-align: left; padding-left: 30px;">
+                    <a href="Lets pretend I've inserted those u2b links :)">Jingle Bells</a>
+                    <br>
+                    <a href="#">We wish you a Merry Christmas</a>
+                    <br>
+                    <a href="#">Silent Night</a>
+                    <br>
+                    <a href="#">Let it snow</a>
+                    <br>
+                    <a href="#">Last Christmas</a>
+                    <br>
+                    <a href="#">Deck the Halls</a>
                 </div>
                 <br>
             </td>
             <td>
-                <p class="date">12/21/2025</p>
-                <h3 style="text-align: right;"><b><u>Buy presents for:</u></b></h3>
-                <ol style="text-align: left;">
+                <h5 class="date">12/21/2025</h5>
+                <h4>Buy presents for:</h4>
+                <ol style="text-align: left;  font-weight: bold;">
                     <li>Parents.</li>
                     <li>My love.</li>
                     <li>Children.</li>
@@ -82,10 +102,8 @@
         </tr>
         <tr>
             <td>
-                <p class="date">12/22/2025</p>
-                <i><b>Watch “Home Alone”:</b></i>
-                <br>
-                <br>
+                <h5 class="date">12/22/2025</h5>
+                <h4>Watch “Home Alone”:</h4>
                 <iframe width="350" height="200"
                     src="https://www.youtube.com/embed/P9FV8S5r3o8?si=GyKqBVuytVeXF1YA&amp;controls=0"
                     title="YouTube video player" frameborder="0"
@@ -93,32 +111,29 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </td>
             <td>
-                <p class="date">12/23/2025</p>
-                <h3><u>Cook Christmas Dinner:</u></h3>
-                <br>
-                <ul style="text-align: left;">
-                    <li>Turkey with stuffing</li>
-                    <li>Mashed Potatoes</li>
-                    <li>Beef Wellington</li>
-                    <li>Salad Olivieh</li>
-                    <li>Eggnog</li>
-                    <li>Apple Cider</li>
-                    <li>Gingerbread cookies</li>
+                <h5 class="date">12/23/2025</h5>
+                <h4>Cook Christmas Dinner:</h4>
+                <ul style="text-align: left; list-style-type: none; padding: 0;   font-style: italic;">
+                    <li>🥂Turkey with stuffing</li>
+                    <li>🥂Mashed Potatoes</li>
+                    <li>🥂Beef Wellington</li>
+                    <li>🥂Salad Olivieh</li>
+                    <li>🥂Eggnog</li>
+                    <li>🥂Apple Cider</li>
+                    <li>🥂Gingerbread cookies</li>
                 </ul>
             </td>
             <td>
-                <p class="date">12/24/2025</p>
+                <h5 class="date">12/24/2025</h5>
+                <h4>Invite guests!</h4>
                 <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/christmas-party-invite-design-template-b72212539237534be12419b190ea336b_screen.jpg?ts=1631791170"
-                    alt="Christmas Party Invite" width="300">
-                <br>
-                <h3 style="color:green"><b><i>Invite guests!</b></i></h3>
+                    alt="Christmas Party Invite" width="300px" height="180px">
             </td>
         </tr>
         <tr>
-            <td colspan="3" style="color:red; font-size: 20px;">
-                <b>12/25/2025: CHRISTMAS PARTY!</b>
-                <br>
-                <br>
+            <td colspan="3">
+                <h2 class="shadow">12/25/2025: CHRISTMAS PARTY!</h2>
+
             </td>
         </tr>
     </table>
