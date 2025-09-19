@@ -44,6 +44,19 @@
             color: #6b7280;
             font-size: 0.9rem
         }
+
+        .issue_field {
+            width: 100%;
+            min-height: 200px;
+            max-height: 300px;
+            padding: 12px;
+            font-size: 16px;
+            line-height: 1.4;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
     </style>
 </head>
 
@@ -83,15 +96,17 @@
             <fieldset>
                 <label><input type="checkbox" name="FAQ" /> I have read the FAQ</label>
             </fieldset>
-            <textarea name="issue_field" rows="8" cols="60" placeholder="Tell us about your issue..." required
-                style="width:100%; max-width:100%; min-height:200px; max-height:300px; padding:12px; font-size:16px; line-height:1.4; border:1px solid #ccc; border-radius:8px; box-sizing:border-box; resize:vertical;"></textarea>
-  
+            <textarea class="issue_field" name="issue_field" rows="8" cols="60"
+                placeholder="Tell us about your issue..." required></textarea>
+            </textarea>
+
             <div class="controls">
                 <button type="submit" alert="ss">Send</button>
                 <button type="reset">Reset</button>
             </div>
-        </div>
-        </form>
+    </div>
+    </form>
 
 </body>
+
 </html>
