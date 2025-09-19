@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 24px;
+            background: #f7f7fb;
+            color: #111;
+            font-size: 1rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 18px;
+            max-width: 640px;
+            margin: auto;
+            box-shadow: 0 6px 18px rgba(20, 20, 40, 0.08)
+        }
+
+        fieldset {
+            border: 0;
+            margin: 0 0 12px 0;
+            padding: 0
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px
+        }
+
+        .controls {
+            margin-top: 12px;
+            display: flex;
+            gap: 8px
+        }
+
+        .subtitle {
+            color: #6b7280;
+            font-size: 0.9rem
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2>Contact support</h2>
+        <p class="subtitle">Please fill out the form below.</p>
+
+        <form onsubmit="alert('Form submitted successfully!');">
+            <fieldset>
+                <label for="name">Full name</label>
+                <input name="name" type="text" placeholder="Your name" required>
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input name="email" type="text" placeholder="Your Email" required>
+            </fieldset>
+            <fieldset>
+                <label for="mobile">Mobile number</label>
+                <input name="mobile" type="text" placeholder="Your mobile number" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred contact method</legend>
+                <label><input type="radio" name="contact" value="email" checked> Email</label>
+                <label><input type="radio" name="contact" value="phone"> Phone</label>
+            </fieldset>
+            <fieldset>
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                    <option value="general">General</option>
+                    <option value="account">Account</option>
+                    <option value="laptop">Laptop</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label><input type="checkbox" name="FAQ" /> I have read the FAQ</label>
+            </fieldset>
+            <textarea name="issue_field" rows="8" cols="60" placeholder="Tell us about your issue..." required
+                style="width:100%; max-width:100%; min-height:200px; max-height:300px; padding:12px; font-size:16px; line-height:1.4; border:1px solid #ccc; border-radius:8px; box-sizing:border-box; resize:vertical;"></textarea>
+  
+            <div class="controls">
+                <button type="submit" alert="ss">Send</button>
+                <button type="reset">Reset</button>
+            </div>
+        </div>
+        </form>
+
+</body>
+</html>
